@@ -27,6 +27,10 @@ class JokeDetail: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.content.resignFirstResponder()
+    }
+    
     /*
     // MARK: - Navigation
 
